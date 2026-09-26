@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Видео — Главная страница</title>
+    <meta
+      name="description"
+      content="Одностраничный сайт с одним видеоплеером на главном экране."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=20260926" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">P</div>
+          <span class="brand-name">PEAK</span>
+        </div>
+        <button class="ghost-button" type="button">Подписаться</button>
+      </header>
+
+      <main class="content">
+        <section class="hero">
+          <div class="hero-text">
+            <span class="eyebrow">Главный ролик</span>
+            <h1>Смотри видео на большом экране</h1>
+            <p>
+              Здесь можно разместить одно главное видео. Страница сделана как
+              базовая основа для будущего сайта с контентом и плеером.
+            </p>
+          </div>
+        </section>
+
+        <section class="player-card" aria-label="Главный видеоплеер">
+          <div class="video-header">
+            <span class="video-label">Видео</span>
+            <h2>Мой ролик</h2>
+          </div>
+
+          <div class="video-frame">
+            <video
+              id="main-video"
+              controls
+              controlsList="nodownload"
+              playsinline
+              preload="metadata"
+              muted="false"
+              poster="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80"
+            >
+              <source src="videos/screen.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+          </div>
+
+          <div class="video-meta">
+            <div>
+              <span class="meta-label">Описание</span>
+              <p>
+                Положите своё видео в папку videos и назовите его main.mp4 —
+                тогда оно автоматически будет показываться на главной странице.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js?v=20260926"></script>
+  </body>
+</html>
