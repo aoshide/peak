@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!video) return;
 
+  const isMediaElement = typeof video.muted === "boolean";
+
+  if (!isMediaElement) return;
+
   video.defaultMuted = false;
   video.muted = false;
   video.volume = 0.8;
